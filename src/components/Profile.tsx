@@ -1,18 +1,17 @@
 import { Stack, Typography } from "@mui/material";
-import React from "react";
 
 interface ProfileProps {
-    name: string;
-    status: string;
-  }
+  name: string;
+  status: string;
+}
 
-const Profile = ({ name, status }):ProfileProps => {
+const Profile: React.FC<ProfileProps> = ({ name, status }) => {
   return (
     <Stack marginBottom={1}>
       <Typography
         fontSize={13}
         fontWeight={700}
-        className="text-blue-300"
+        className="text-blue"
         textTransform={"uppercase"}
       >
         {name}
